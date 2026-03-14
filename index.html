@@ -7,14 +7,16 @@
     <meta name="keywords" content="E-Commece Website, ShopNow, Shop Now, Online Shopping, Shopping" />
     <meta name="author" content="Deep Pramanik" />
     <title>E-Commerce Website</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/print.css" media="print">
     <link rel="stylesheet" href="assets/css/loading.css">
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/colors.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="icon" href="favicon.png">
     <script defer src="assets/js/index.js"></script>
     <script defer src="assets//js/header.js"></script>
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
 </head>
 
 <body>
@@ -23,36 +25,106 @@
             <span abc></span>
         </section>
     </section>
+    <section class="updates">
+        <section class="content">
+            <section class="path">
+                <span id="home">Home </span> |
+            </section>
+            <section class="contact">
+                Need help? Chat with us <span class="bi bi-whatsapp">+91 0123456789</span>
+            </section>
+        </section>
+    </section>
     <header>
         <section class="navigation">
-            <section class="logo" id="site-logo">LOGO</section>
+            <section class="logo" id="site-logo">
+                <img src="assets/img/logo-with-bg.png" alt="">
+            </section>
             <section class="user-input">
                 <section class="search-bar">
                     <input type="text" name="search_query" id="query" placeholder="Search...">
-                    <span class="icon clear-btn fa fa-x" id="int-clr-btn"></span>
-                    <span class="icon search-icon fa fa-search" id="int-search-btn"></span>
+                    <span class="icon clear-btn bi bi-x-lg" id="int-clr-btn"></span>
+                    <span class="icon search-icon bi bi-search" id="int-search-btn"></span>
                 </section>
                 <section class="country select-country">
                     <input type="checkbox" id="country-select-activation-btn">
-                    <section id="country" countryname="INDIA"></section>
-                    <span class="icon fa fa-chevron-down"></span>
+                    <!-- <section id="country" countryname="INDIA"></section> -->
+                    <img id="country">
+                    <span class="icon bi bi-chevron-down"></span>
                     <section class="country-names">
-                        <input type="radio" name="country-list" value="INDIA">
-                        <input type="radio" name="country-list" value="US">
-                        <input type="radio" name="country-list" value="UK">
-                        <input type="radio" name="country-list" value="AUSTRALIA">
-                        <input type="radio" name="country-list" value="MEXICO">
-                        <input type="radio" name="country-list" value="CANADA">
-                        <input type="radio" name="country-list" value="FRANCE">
-                        <input type="radio" name="country-list" value="GERMANY">
-                        <input type="radio" name="country-list" value="ITALY">
-                        <input type="radio" name="country-list" value="SINGAPORE">
-                        <input type="radio" name="country-list" value="INDONESIA">
+                        <span class="country-region">Africa</span>
+                        <input type="radio" name="country-name" value="South Africa" />
+                        <span class="country-region">Asia</span>
+                        <input type="radio" name="country-name" value="China" />
+                        <input type="radio" name="country-name" value="Hong Kong, China" />
+                        <input type="radio" name="country-name" value="India" />
+                        <input type="radio" name="country-name" value="Japan" />
+                        <input type="radio" name="country-name" value="Malaysia" />
+                        <input type="radio" name="country-name" value="Philippines" />
+                        <input type="radio" name="country-name" value="Singapore" />
+                        <input type="radio" name="country-name" value="South Korea" />
+                        <input type="radio" name="country-name" value="Taiwan" />
+                        <input type="radio" name="country-name" value="Thailand" />
+                        <input type="radio" name="country-name" value="Vietnam" />
+                        <span class="country-region">Australia</span>
+                        <input type="radio" name="country-name" value="Australia" />
+                        <input type="radio" name="country-name" value="New Zealand" />
+                        <span class="country-region">Europe</span>
+                        <input type="radio" name="country-name" value="Austria" />
+                        <input type="radio" name="country-name" value="Belgium" />
+                        <input type="radio" name="country-name" value="Bulgaria" />
+                        <input type="radio" name="country-name" value="Czech Republic" />
+                        <input type="radio" name="country-name" value="Denmark" />
+                        <input type="radio" name="country-name" value="Estonia" />
+                        <input type="radio" name="country-name" value="Finland" />
+                        <input type="radio" name="country-name" value="France" />
+                        <input type="radio" name="country-name" value="Germany" />
+                        <input type="radio" name="country-name" value="Greece" />
+                        <input type="radio" name="country-name" value="Hungary" />
+                        <input type="radio" name="country-name" value="Ireland" />
+                        <input type="radio" name="country-name" value="Italy" />
+                        <input type="radio" name="country-name" value="Latvia" />
+                        <input type="radio" name="country-name" value="Lithuania" />
+                        <input type="radio" name="country-name" value="Luxembourg" />
+                        <input type="radio" name="country-name" value="Netherlands" />
+                        <input type="radio" name="country-name" value="Norway" />
+                        <input type="radio" name="country-name" value="Poland" />
+                        <input type="radio" name="country-name" value="Portugal" />
+                        <input type="radio" name="country-name" value="Romania" />
+                        <input type="radio" name="country-name" value="Slovakia" />
+                        <input type="radio" name="country-name" value="Slovenia" />
+                        <input type="radio" name="country-name" value="Spain" />
+                        <input type="radio" name="country-name" value="Sweden" />
+                        <input type="radio" name="country-name" value="Switzerland" />
+                        <input type="radio" name="country-name" value="United Kingdom" />
+                        <span class="country-region">Middle East</span>
+                        <input type="radio" name="country-name" value="Israel" />
+                        <span class="country-region">North America</span>
+                        <input type="radio" name="country-name" value="Canada" />
+                        <input type="radio" name="country-name" value="Mexico" />
+                        <input type="radio" name="country-name" value="United States" />
+                        <span class="country-region">South America</span>
+                        <input type="radio" name="country-name" value="Brazil" />
                     </section>
                 </section>
             </section>
+            <section class="menu-items">
+                <section class="menu theme" id="theme-change-btn">
+                    <span class="dark bi bi-moon-stars" id="dark-theme"></span>
+                    <span class="light bi bi-sun" id="light-theme"></span>
+                    <span class="text">Theme</span>
+                </section>
+                <section class="menu cart">
+                    <span class="icon bi bi-cart3"><sup>0</sup></span>
+                    <span class="text">Cart</span>
+                </section>
+                <section class="menu profile">
+                    <span class="icon bi bi-person"></span>
+                    <span class="text">Profile</span>
+                </section>
+            </section>
             <section class="small-device-menu-bar">
-                <input type="checkbox" id="mobile-navigation-activation" checked>
+                <input type="checkbox" id="mobile-navigation-activation">
                 <span _1></span>
                 <span _2></span>
                 <span _3></span>
@@ -62,8 +134,60 @@
     <main>
 
     </main>
-    <footer>
-
+    <footer class="site-footer">
+        <section class="footer-top">
+            <section class="footer-logo">
+                <span>LOGO</span>
+                <p>Your one-stop shop for everything!</p>
+            </section>
+            <section class="footer-links">
+                <section>
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Home & Living</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Electronics</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </section>
+            </section>
+            <section class="footer-newsletter">
+                <h4>Subscribe to our Newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <section class="footer-social">
+                <a href="#" class="bi bi-facebook" aria-label="Facebook"></a>
+                <a href="#" class="bi bi-twitter" aria-label="Twitter"></a>
+                <a href="#" class="bi bi-instagram" aria-label="Instagram"></a>
+                <a href="#" class="bi bi-youtube" aria-label="YouTube"></a>
+            </section>
+            <p>&copy; 2024 ShopNow. All rights reserved.</p>
+        </section>
     </footer>
 </body>
 
